@@ -1,0 +1,17 @@
+ trigger:
+ - master
+
+ pool:
+   vmImage: 'ubuntu-latest'
+
+ steps:
+ - task: CopyFiles@2
+   displayName: 'Copy Files to: Staging Artifact'
+   inputs:
+     Contents: |
+       **/*.pbix 
+       **/*.ps1
+     TargetFolder: '$(Build.ArtifactStagingDirectory)'
+     OverWrite: true
+ - task: PublishBuildArtifacts@1
+   displayName: 'Publish Artifact: drop'
