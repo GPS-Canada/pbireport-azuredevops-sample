@@ -9,8 +9,8 @@
    displayName: 'Copy Files to: Staging Artifact'
    inputs:
      Contents: |
-       **/*.pbix 
-       **/*.ps1
+       pbix/customer-report-v3.pbix 
+       ps-scripts/deploy-pbixreport.ps1
      TargetFolder: '$(Build.ArtifactStagingDirectory)'
      OverWrite: true
  - task: PublishBuildArtifacts@1
