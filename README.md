@@ -209,3 +209,9 @@ Below is an example of a pipeline that deploys a Tradewinds report and Contoso r
 
 <img src="./images/azdevops_extended.jpg" width=500>
 Those looking for granular control of their PowerBI report deployment pipelines, this recipe of using Powershell and Azure Devops is a viable option.  
+
+
+
+
+
+.
